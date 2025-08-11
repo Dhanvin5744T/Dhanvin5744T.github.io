@@ -1,0 +1,43 @@
+:root{
+  --bg:#0b0b0c;
+  --panel:#111214;
+  --accent:#d32f2f;
+  --muted:#9aa1a6;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color-scheme: dark;
+  color:#eaeef0;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#070708,#0f0f10);min-height:100vh;display:flex;flex-direction:column}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{font-weight:700;font-size:1.1rem}
+.nav a{color:var(--muted);text-decoration:none;margin-left:12px;padding:8px;border-radius:8px}
+.nav a.active, .nav a:hover{color:#fff;background:rgba(255,255,255,0.02)}
+
+.main{display:flex;gap:18px;align-items:flex-start;padding:20px;max-width:1000px;margin:0 auto;width:100%}
+.game-area{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px}
+canvas{background:linear-gradient(#2b2b2b,#1b1b1b);border-radius:12px;border:6px solid rgba(255,255,255,0.02);box-shadow:0 18px 40px rgba(0,0,0,0.6);max-width:100%}
+.hud{display:flex;justify-content:space-between;width:100%;max-width:420px;color:var(--muted);font-weight:600}
+.controls{display:flex;gap:12px;align-items:center}
+.control-btn{padding:10px 16px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:inherit;font-size:18px}
+.control-btn.primary{background:var(--accent);color:#fff}
+
+.panel{width:300px;background:var(--panel);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.panel h3{margin-top:0}
+.small{color:var(--muted);font-size:0.9rem;margin-top:12px}
+
+/* modal */
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6)}
+.modal.hidden{display:none}
+.modal-content{background:#0d0d0e;padding:18px;border-radius:12px;max-width:560px;width:90%;position:relative;border:1px solid rgba(255,255,255,0.03)}
+.close{position:absolute;right:10px;top:10px;border:0;background:transparent;color:var(--muted);font-size:18px}
+
+/* footer */
+.footer{text-align:center;padding:18px;color:var(--muted);margin-top:auto}
+
+/* responsive */
+@media(max-width:860px){
+  .main{flex-direction:column;align-items:center;padding:12px}
+  .panel{width:100%}
+}

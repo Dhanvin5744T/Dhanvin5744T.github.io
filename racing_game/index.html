@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Racer — Play Offline</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Racer</div>
+    <nav class="nav">
+      <a href="#" class="active">Play</a>
+      <a href="#" id="howToBtn">How to Play</a>
+      <a href="#" id="creditsBtn">Credits</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="game-area">
+      <canvas id="gameCanvas" width="400" height="600" aria-label="Racing game"></canvas>
+      <div class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Speed: <span id="speed">0</span></div>
+      </div>
+
+      <div class="controls">
+        <button id="leftBtn" class="control-btn">◀</button>
+        <button id="restartBtn" class="control-btn primary">Restart</button>
+        <button id="rightBtn" class="control-btn">▶</button>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <h3>Best Tips</h3>
+      <ul>
+        <li>Use ← → or A/D keys to steer.</li>
+        <li>Avoid obstacles and collect nitro boosts.</li>
+        <li>Longer you survive, faster the speed and higher the score.</li>
+      </ul>
+      <div class="small">Local game — works offline. Open index.html to play.</div>
+    </aside>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="footer">Built for you — open-source demo</footer>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
