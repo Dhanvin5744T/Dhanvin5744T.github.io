@@ -1,15 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>eSports Hub — Free Fire</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is my first website hosted for free using GitHub Pages.</p>
-  <button onclick="showMessage()">Click Me</button>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">eSports Hub</a>
+      <button id="navToggle" class="nav-toggle" aria-label="open menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="games.html">Games</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <script src="script.js"></script>
+  <main>
+    <section class="hero">
+      <img src="images/free_fire.svg" alt="Free Fire" class="hero-art">
+      <div class="hero-content">
+        <h1>Free Fire — Battle Royale</h1>
+        <p class="tagline">Fast matches. Big plays. Pro-level action.</p>
+        <div class="hero-cta">
+          <a href="games.html#freefire" class="btn">View Game</a>
+          <a href="reviews.html#freefire" class="btn btn-outline">Read Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container latest-news">
+      <h2>Latest News</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/game2.svg" alt="">
+          <div class="card-body">
+            <h3>Free Fire Season Update</h3>
+            <p>New skins, maps, and ranked rewards — Season 17 kicks off with a bang.</p>
+            <a class="small-link" href="#">Read more →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/game3.svg" alt="">
+          <div class="card-body">
+            <h3>Esports Tournament Announced</h3>
+            <p>Local leagues open for registration. Win cash prizes and pro coaching.</p>
+            <a class="small-link" href="#">Read more →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/game4.svg" alt="">
+          <div class="card-body">
+            <h3>Pro Tip: Peak Shooting</h3>
+            <p>Short guide on peeking and counter-peeking to improve your win rate.</p>
+            <a class="small-link" href="#">Read more →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container featured" id="featured">
+      <h2>Featured Games</h2>
+      <div class="grid">
+        <a class="game-card" href="games.html#freefire">
+          <img src="images/free_fire.svg" alt="">
+          <h4>Free Fire</h4>
+          <p>Fast-paced battle royale with intense 10-minute matches.</p>
+        </a>
+        <a class="game-card" href="#">
+          <img src="images/game2.svg" alt="">
+          <h4>Clash Arena</h4>
+          <p>Team-based tactical shooter with ranked seasons.</p>
+        </a>
+        <a class="game-card" href="#">
+          <img src="images/game3.svg" alt="">
+          <h4>SpeedRacers</h4>
+          <p>High-octane racing with custom vehicle tuning.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span id="year"></span> eSports Hub — Built for players</div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">T</a>
+        <a href="#" aria-label="YouTube">Y</a>
+        <a href="#" aria-label="Discord">D</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

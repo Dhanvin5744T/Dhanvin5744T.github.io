@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="12" fill="#111"/>
+  <text x="30" y="80" font-size="48" fill="#fff">SpeedRacers</text>
+  <text x="30" y="130" font-size="18" fill="#bbb">Arcade Racing — drift & time trials</text>
+</svg>
